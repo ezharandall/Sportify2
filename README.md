@@ -1,65 +1,61 @@
-# ShoeMarket
+# Sportify
 
-## Shoes Proposal Listing
-
-### Team Members: 
+### Team Members:
 * Ezha Randall
+* Vanessa Blue
+* Morgan Chastain
 * Jonathan Ansley
-* John Saugy
-* Michael Megarbane
 
 
 ### Links:
- * [GitHub Repository](https://github.com/jonathanansley/ShoeMarket)
- * [Heroku](https://fierce-reef-37071.herokuapp.com/)
- * [ShoeMarket Presentation Slides](https://docs.google.com/presentation/d/10eg53H8cBBh-CqUtXjfIU4_xKamsFfYzyK1UxMCKnoo/edit#slide=id.p)
+ * [GitHub Repository](https://github.com/ezharandall/Sportify5)
+ * [Heroku](https://sportifyteam.herokuapp.com/)
 
 
 ### Project Description:
-We are creating a site for sellers of Men's Athletic shoes (e.g. Jordan, KD, Kyrie). The site will manage the inventory (shoe types/sizes/quantity) of shoes, msrp, sellers price, profit (sellers price – msrp will calculate profit), clients and their data (name, address, phone, email, etc). The site will also have a history of orders that have taken place, and it will update orders that will take place via a form for the seller to fill out.
+Sportify’s sports team management app saves coaches and managers tons of time organizing their teams and groups. The powerful tools in our team management software simplify every aspect of team organization and communication. Functionality includes roster management, communication of news and schedules, photo sharing, and fees collection.  Spend less time organizing and more time coaching!
 
 
-### Instructions for database (initial setup):
-Warning: This will drop any previous tables and delete any data.
-1. In MySQL workbench, SQL Pro, or similar program, run schema.sql. It will drop the shoe database (if it exists) and will create the "shoe" database.
-2. Go to bash and "npm start". That will have sequelize create the empty tables.
-3. In MySQL workbench, SQL Pro, or similar program, run "seeds.sql". That will insert 5 rows of sample data into the tables.
+# ExtReact Conference App
 
-Note: If you do not want to change your database each time you run "npm start", then go into server.js and change "force: true" to "force: false".
+An example app built with [ExtReact](http://docs.sencha.com/extreact/latest/index.html), Redux, and React-Router.
 
+## Running
 
-### Project 2 Requirements:
+ExtReact and all related packages are hosted on Sencha's private NPM registry. To gain access to this registry, [sign up for a trial of ExtReact](https://www.sencha.com/products/extreact/evaluate).
 
-#### Your project must:
+Once you have received your credentials, you can authenticate by running the following command:
+```
+npm login --registry=http://npm.sencha.com --scope=@extjs
+```
+for now use:
+username: mmchast88..gmail.com
+password: FdmU6N3jTH
+email: mmchast88@gmail.com
 
-* Use a Node and Express Web Server;
+Then, run the following to build and launch the app:
 
-* Be backed by a MySQL Database an ORM (not necessarily Sequelize);
+```
+git clone https://github.com/ezharandall/Sportify5.git
+npm install
+npm start
+```
 
-* Have both GET and POST routes for retrieving and adding new data;
+You can view the app by pointing your browser to [http://localhost:8085](http://localhost:8085)
+...
 
-* Be deployed using [Heroku](https://www.heroku.com/) (with Data);
+To create the Express sever:
+$ npm install -g express-generator
 
-* Utilize at least one new library, package, or technology that we haven't discussed;
+Then run it to create the Express App:
+$ express react-backend
 
-* Have a polished frontend / UI;
+It’ll create a react-backend folder. Then make sure to install the dependencies:
+$ cd react-backend
+$ npm install   # or yarn
 
-* Have folder structure that meets MVC Paradigm;
+Start up the app by running this:
+$ PORT=3005 npm start
 
-* Meet good quality coding standards (indentation, scoping, naming).
-
-
-
-#### Suggestions
-
-Your project should:
-
-* Incorporate Basic Testing Framework, see Project Suggestions;
-
-* Use Handlebars for Server-Side Templating
-
-* Incorporate Authentication (JSON Web Tokens, Sessions, Etc.)
-
-* Use an existing public dataset to power the database (This is probably not important.)
-
-* Create a migration strategy for sharing data across team members.
+NPM Install for the login component:
+$ npm install react-signup-login-component
